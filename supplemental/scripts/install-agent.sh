@@ -349,7 +349,7 @@ EOF
 
   # Auto-update service for Alpine
   # printf "\nWould you like to enable automatic daily updates for beszel-agent? (y/n): "
-  AUTO_UPDATE=true
+  AUTO_UPDATE=Y
   case "$AUTO_UPDATE" in
   [Yy]*)
     echo "Setting up daily automatic updates for beszel-agent..."
