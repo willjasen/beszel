@@ -349,9 +349,9 @@ EOF
 
   # Auto-update service for Alpine
   # printf "\nWould you like to enable automatic daily updates for beszel-agent? (y/n): "
-  # read AUTO_UPDATE
-  # case "$AUTO_UPDATE" in
-  # [Yy]*)
+  AUTO_UPDATE=true
+  case "$AUTO_UPDATE" in
+  [Yy]*)
     echo "Setting up daily automatic updates for beszel-agent..."
 
     cat >/etc/init.d/beszel-agent-update <<EOF
