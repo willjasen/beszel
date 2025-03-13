@@ -432,8 +432,8 @@ EOF
   service beszel-agent restart
 
   # Auto-update service for OpenWRT using a crontab job
-  printf "\nWould you like to enable automatic daily updates for beszel-agent? (y/n): "
-  read AUTO_UPDATE
+  # printf "\nWould you like to enable automatic daily updates for beszel-agent? (y/n): "
+  AUTO_UPDATE="Y"
   case "$AUTO_UPDATE" in
   [Yy]*)
     echo "Setting up daily automatic updates for beszel-agent..."
@@ -499,8 +499,8 @@ EOF
   systemctl start beszel-agent.service
 
   # Prompt for auto-update setup
-  printf "\nWould you like to enable automatic daily updates for beszel-agent? (y/n): "
-  AUTO_UPDATE=true
+  # printf "\nWould you like to enable automatic daily updates for beszel-agent? (y/n): "
+  AUTO_UPDATE="Y"
   case "$AUTO_UPDATE" in
   [Yy]*)
     echo "Setting up daily automatic updates for beszel-agent..."
