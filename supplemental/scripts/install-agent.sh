@@ -500,7 +500,7 @@ EOF
 
   # Prompt for auto-update setup
   printf "\nWould you like to enable automatic daily updates for beszel-agent? (y/n): "
-  read AUTO_UPDATE
+  AUTO_UPDATE=true
   case "$AUTO_UPDATE" in
   [Yy]*)
     echo "Setting up daily automatic updates for beszel-agent..."
